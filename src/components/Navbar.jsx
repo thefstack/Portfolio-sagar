@@ -37,18 +37,19 @@ const Navbar = () => {
   ];
 
   return (
-
+    <div className=' z-90'>
       <CardNav
       logo={logo}
       logoAlt="Company Logo"
       items={items}
-      baseColor="#ffffff30"
-      menuColor="#fff"
+      baseColor="#ffffffe0"
+      menuColor="#000"
       buttonBgColor="#111"
       buttonTextColor="#fff"
       ease="power3.out"
       className='z-10'
     />
+    </div>
 
   )
 }

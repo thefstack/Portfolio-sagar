@@ -1,0 +1,52 @@
+.metal-btn {
+  border: none;
+  display: inline-block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.metal-btn__border {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+
+/* Shine strip */
+.metal-btn__border::before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray, #dcdcdc);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.metal-btn:hover .metal-btn__border::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+.metal-btn:hover {
+  color: white;
+}
+
+/* Active press */
+.metal-btn:active .metal-btn__border::before {
+  background: #2751cd;
+}

@@ -1,9 +1,14 @@
 "use client";
 import AboutMe from "@/components/AboutMe";
+import Carousel from "@/components/Carousel";
 import Hero from "@/components/Hero";
 import LogoLoop from "@/components/LogoLoop";
+import Meet from "@/components/Meet";
 import Navbar from "@/components/Navbar";
+import ProcessSection from "@/components/Process";
+import Projects from "@/components/Projects";
 import ScrollDown from "@/components/ScrollDown";
+import Services from "@/components/Services";
 
 import React from "react";
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
@@ -57,6 +62,11 @@ const App = () => {
     </div>
     </div></div>
           <AboutMe/>
+          <Projects/>
+          <Meet/>
+          <Carousel/>
+          <ProcessSection/>
+          <Services/>
         </div>
         {/* <div
         className="
