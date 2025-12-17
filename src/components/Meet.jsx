@@ -40,7 +40,7 @@ const Meet = () => {
   return (
     <div
       ref={sectionRef}
-      className=" bg-[#060010] text-white p-6 md:p-12 lg:p-16"
+      className=" bg-[#060010] text-white p-6 md:p-12 lg:p-16 rounded-t-[90px] border-t-8 border-gray-800"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">

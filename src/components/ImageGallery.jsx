@@ -26,7 +26,7 @@ function ImageCard({ image, caption, link }) {
 
   const content = (
     <div
-      className="relative w-full h-90 overflow-hidden rounded-lg cursor-pointer group"
+      className="relative w-full h-[280px] overflow-hidden rounded-lg cursor-pointer group"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -139,13 +139,13 @@ const Services = () => {
   ];
 
   return (
-    <section className="w-full bg-[#060010] text-white py-12 md:py-20 px-4 md:px-8 lg:px-12">
+    <section className="w-full bg-[#060010] text-white py-12 md:py-20 px-4 md:px-8 lg:px-12 rounded-t-[90px] border-t-8 border-gray-800">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-16">
           {/* Left Content */}
           <div className="flex flex-col justify-center">
-            <div className="flex items-center gap-2 mb-6 border-2  px-10 py-4 w-fit rounded-full">
+            <div className="flex items-center gap-2 mb-6 border-2  px-7 py-4 w-fit rounded-full">
               <div className="w-2 h-2 bg-white rounded-full"></div>
               <span className="text-sm text-gray-400">Design services</span>
             </div>
@@ -185,11 +185,11 @@ const Services = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative rounded-3xl overflow-hidden bg-gray-800 aspect-square lg:aspect-auto lg:h-full min-h-[400px]">
+          <div className="relative rounded-3xl overflow-hidden bg-gray-800 aspect-square lg:aspect-auto lg:h-full md:h-[300px] sm:h-[200px] mx-auto">
             <img
               src="/bottle.avif"
               alt="Product packaging design"
-              className="w-full h-full max-h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105"
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105"
             />
           </div>
         </div>

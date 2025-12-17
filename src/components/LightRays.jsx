@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect, useState } from 'react';
 import { Renderer, Program, Triangle, Mesh } from 'ogl';
 
@@ -53,29 +54,10 @@ const LightRays = ({
   const animationIdRef = useRef(null);
   const meshRef = useRef(null);
   const cleanupFunctionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const observerRef = useRef(null);
+
 
   useEffect(() => {
-    if (!containerRef.current) return;
-
-    observerRef.current = new IntersectionObserver(entries => {
-      const entry = entries[0];
-      setIsVisible(entry.isIntersecting);
-    }, { threshold: 0.1 });
-
-    observerRef.current.observe(containerRef.current);
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-        observerRef.current = null;
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible || !containerRef.current) return;
+    if ( !containerRef.current) return;
 
     if (cleanupFunctionRef.current) {
       cleanupFunctionRef.current();
@@ -319,7 +301,6 @@ void main() {
       }
     };
   }, [
-    isVisible,
     raysOrigin,
     raysColor,
     raysSpeed,
@@ -386,10 +367,11 @@ void main() {
   }, [followMouse]);
 
   return (
-    <div
-      ref={containerRef}
-      className={`w-full h-full pointer-events-none z-[3] overflow-hidden relative ${className}`.trim()} />
-  );
-};
+  <div
+    ref={containerRef}
+    className={`fixed inset-0 w-screen h-screen pointer-events-none overflow-hidden ${className}`}
+  />
+);
+}
 
 export default LightRays;

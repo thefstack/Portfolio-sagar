@@ -43,7 +43,7 @@ const Navbar = () => {
       logoAlt="Company Logo"
       items={items}
       baseColor="#ffffffe0"
-      menuColor="#000"
+      menuColor="#fff"
       buttonBgColor="#111"
       buttonTextColor="#fff"
       ease="power3.out"

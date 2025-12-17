@@ -157,3 +157,7 @@
     opacity: 0;
   }
 }
+
+.html,body{
+  background: #060010;
+}

@@ -14,7 +14,7 @@ import LightRays from "./LightRays";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[#060010] overflow-hidden flex flex-col items-center justify-center gap-4 px-4 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen w-full bg-[#060010] overflow-hidden flex flex-col items-center justify-center gap-4 px-4 sm:px-6 lg:px-8 relative z-10 bg-transparent">
       <div className="absolute inset-0 min-w-full h-full">
         <div style={{ width: "100%", height: "900px", position: "relative" }}>
           {/* <LightRays

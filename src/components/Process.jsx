@@ -76,7 +76,7 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="bg-[#080114] text-white py-16">
+    <section className="bg-[#080114] text-white py-16 rounded-t-[90px] border-t-8 border-gray-800 lg:pl-16">
       <div className="grid lg:grid-cols-2 min-h-screen max-w-7xl mx-auto">
         {/* Left side - Image */}
         <div className="relative h-64 lg:h-auto">

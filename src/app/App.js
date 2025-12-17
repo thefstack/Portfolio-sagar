@@ -1,6 +1,10 @@
 "use client";
 import AboutMe from "@/components/AboutMe";
 import Carousel from "@/components/Carousel";
+import ClientReviews from "@/components/ClientReview";
+import FAQSection from "@/components/FAQ";
+import FooterCTA from "@/components/FooterCta";
+import GlobalLightRays from "@/components/GlobalLightRays";
 import Hero from "@/components/Hero";
 import LogoLoop from "@/components/LogoLoop";
 import Meet from "@/components/Meet";
@@ -38,7 +42,10 @@ const App = () => {
         baseRotation={5}
         blurStrength={10}
       > */}
-        <div className="relative">
+         {/* GLOBAL BACKGROUND LIGHT */}
+      <GlobalLightRays zIndex={5} />
+
+        <div className="relative isolatey z-10">
           <Navbar />
           <Hero />
           <div className="bg-[#060010] w-full relative flex flex-col justify-center items-center"><div className=" w-full pt-0 mt-[-12px]"><ScrollDown/></div>
@@ -67,6 +74,9 @@ const App = () => {
           <Carousel/>
           <ProcessSection/>
           <Services/>
+          <ClientReviews/>
+          <FAQSection/>
+          <FooterCTA/>
         </div>
         {/* <div
         className="

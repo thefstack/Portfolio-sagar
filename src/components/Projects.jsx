@@ -51,7 +51,7 @@ const Projects = () => {
 
   return (
     <main
-      className="bg-[#080114] py-12 origin-center"
+      className="bg-[#080114] py-12 origin-center rounded-t-[90px] border-t-8 border-gray-800"
     >
     <h1 className="text-white text-center text-4xl">Projects</h1>
       <div ref={mainRef} className="container mx-auto mt-32">
