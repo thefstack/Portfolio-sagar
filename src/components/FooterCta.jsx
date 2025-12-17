@@ -10,11 +10,11 @@ export default function FooterCTA() {
     <section className="relative min-h-[100vh] w-full relative z-10 bg-transparent">
 
       {/* FOOTER CONTENT */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-6 pb-32 min-h-[100dvh]">
+      <div className="relative z-10 flex flex-col items-center justify-center px-6 pb-32 h-[600px] min-h-[100dvh]">
         <div className="max-w-3xl text-center">
 
           {/* Badge */}
-            <div className=" flex justify-center mb-6 ">
+            <div className=" flex justify-center mb-6 mt-16">
               <ShinyText text={"Crafting Unique Brand Identities"} />
             </div>
 
