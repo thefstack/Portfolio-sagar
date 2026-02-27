@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sagar — Brand Identity & Design Studio
+
+**Live:** [portfolio2.thefstack.com](https://portfolio2.thefstack.com/) &nbsp;|&nbsp; **GitHub:** [thefstack/Portfolio-sagar](https://github.com/thefstack/Portfolio-sagar)
+
+A freelance client project — a modern, animated portfolio website for a branding and design studio. Built with Next.js 16 and React 19, featuring fluid animations, interactive 3D elements, and a dark aesthetic designed to showcase the client's brand identity and packaging design work.
+
+## Features
+
+- Animated hero with light ray effects and scroll-triggered reveals
+- Bento grid about section with spotlight and tilt interactions
+- Infinite logo loop marquee for tech stack and services
+- Project showcase with carousel
+- Interactive process timeline
+- Client reviews section
+- FAQ section with smooth accordion
+- Full responsive design (mobile → desktop)
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router) |
+| UI | [React 19](https://react.dev) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com) |
+| Animations | [GSAP 3](https://gsap.com) |
+| 3D / WebGL | [Three.js](https://threejs.org), [React Three Fiber](https://r3f.docs.pmnd.rs), [OGL](https://oframe.github.io/ogl/) |
+| Icons | [Lucide React](https://lucide.dev), [React Icons](https://react-icons.github.io/react-icons/) |
+| UI Components | [MUI](https://mui.com) |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm / bun
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── layout.js         # Root layout with metadata & fonts
+│   ├── page.js           # Entry page
+│   ├── App.js            # Main app composition
+│   └── globals.css       # Global styles
+├── components/
+│   ├── Navbar.jsx        # Sticky navigation with card menu
+│   ├── Hero.jsx          # Full-screen hero section
+│   ├── AboutMe.jsx       # Bento grid about section
+│   ├── Projects.jsx      # Portfolio project showcase
+│   ├── Meet.jsx          # Personal intro section
+│   ├── Carousel.jsx      # Project carousel
+│   ├── Process.jsx       # Design process timeline
+│   ├── Services.jsx      # Services offered
+│   ├── ClientReview.jsx  # Client testimonials
+│   ├── FAQ.jsx           # FAQ accordion
+│   ├── FooterCta.jsx     # Footer call to action
+│   ├── LogoLoop.jsx      # Infinite marquee loop
+│   ├── MagicBento.jsx    # Interactive bento grid
+│   ├── LightRays.jsx     # WebGL light ray background
+│   └── ...               # Other UI primitives
+└── assets/
+    └── logo.svg          # Brand logo
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The site is live at [portfolio2.thefstack.com](https://portfolio2.thefstack.com/).
 
-## Deploy on Vercel
+To deploy your own instance, push to the [GitHub repository](https://github.com/thefstack/Portfolio-sagar) and connect it to [Vercel](https://vercel.com) for automatic deployments on every push. Or deploy manually:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx vercel
+```
